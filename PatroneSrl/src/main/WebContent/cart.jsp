@@ -7,7 +7,7 @@
 <%@ page language = "java" contentType = "text/html; charset=UTF-8" pageEncoding = "UTF-8" %>
 
 <!DOCTYPE html>
-<html>
+<html lang=en>
 	<head>
 		<meta charset="UTF-8">
 		<title>Cart</title>
@@ -82,13 +82,15 @@
 							<p class="mb-2">Subtotal</p>
 							<p class="mb-2">${((total>0)?total:0)} €</p>
 						</div>
+						<!-- DA IMPLEMENTARE
 						<div class="d-flex justify-content-between" style="font-weight: 500;">
 							<p class="mb-0">Shipping</p>
 							<p class="mb-0">20.00 €</p>
 						</div>
+						 -->
 						<hr class="my-4">
 						<div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
-							<p class="mb-2">Total (tax included)</p>
+							<p class="mb-2">Total<!--(tax included)--></p>
 							<p class="mb-2">${(total>0)?total:0} €</p>
 						</div>
 						<button type="button" class="btn btn-primary btn-block btn-lg">

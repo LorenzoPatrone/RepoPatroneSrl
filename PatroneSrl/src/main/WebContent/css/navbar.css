@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+:root {
+	background-color: whitesmoke;
+}
+
+h1 {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+p {
+	font-family: 'Helvetica', sans-serif;
+}
+
+.navbar div a {
+	font-size: 3rem !important;
+}
+
+.navbar-nav li a {
+	font-family: 'Aracne Condensed Regular', sans-serif;
+	font-size: 2em !important;
+}
+
+.navbar {
+	height: 9rem;
+}
+
+.navbar-brand {
+	font-family: 'Pillow Talk', sans-serif;
+}
+

@@ -1,8 +1,10 @@
 package control;
 
-import java.io.IOException;
+import java.io.*;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.*;
+import java.util.logging.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,9 +16,10 @@ import connection.ConPool;
 import dao.ProductDao;
 import model.ProductBean;
 
-
 @WebServlet("/new-product")
 public class AddNewProductServlet extends HttpServlet {
+	
+	private static final Logger LOGGER = Logger.getLogger(AddNewProductServlet.class.getName());
 	
     public AddNewProductServlet() {
         super();
@@ -45,7 +48,7 @@ public class AddNewProductServlet extends HttpServlet {
 					out.print("Inserimento prodotto fallito. Controlla i campi immessi.");
 				}
 			} catch (ClassNotFoundException | SQLException e) {
-				e.printStackTrace();
+				LOGGER.severe("An exception occurred: " + e.getMessage());
 			}
 		}
 	}
